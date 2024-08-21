@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Food Admin</string>
+    <string name="WavesOfFood">Waves Of Food</string>
+    <string name="adminDash">Admin Dashboard</string>
+    <string name="loginTo"> Login To Your\nAdmin Dashboard</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or">Or</string>
+    <string name="continueW">Continue With</string>
+    <string name="signUpW">Sign up With</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="dont">Don\'t Have Account?</string>
+    <string name="alreadyAccount">Already Have An Account?</string>
+    <string name="login">Login</string>
+    <string name="signUpDashBoard">Sign Up\nYour Admin Dashboard</string>
+    <string name="ownerName">Name Of Owner</string>
+    <string name="restaurant">Name Of Restaurant</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="create">Create Account</string>
+    <string name="chooseLocation">Choose Location</string>
+    <string name="location">location</string>
+</resources>

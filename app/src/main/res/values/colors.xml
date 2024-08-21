@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#53E88B</color>
+    <color name="green2">#5DAB5B</color>
+    <color name="button_color">#ecf0f1</color>
+    <color name="grey">#dfe6e9</color>
+    <color name="red">#EA2027</color>
+    <color name="button_material_color">#6750A4</color>
+    <color name="searchColor">#dfe4ea</color>
+    <color name="yellow">#f1c40f</color>
+    <color name="purple">#8e44ad</color>
+</resources>
