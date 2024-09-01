@@ -5,7 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_app"
     tools:context=".Sign.SignUpActivity">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/logo"
+        android:alpha="0.07"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -146,7 +152,18 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:hintEnabled="true"
                     android:hint="@string/password"
+                    app:counterOverflowTextColor="@color/red"
+                    app:errorEnabled="true"
+                    app:boxStrokeErrorColor="@color/red"
+                    app:helperText="Password must be length of 8 Character"
+                    app:helperTextEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:hintAnimationEnabled="true"
+                    app:expandedHintEnabled="true"
+
                     android:layout_marginTop="5dp"
                     app:endIconMode="password_toggle"
                     app:startIconDrawable="@drawable/password">

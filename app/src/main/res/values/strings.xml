@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Food Admin</string>
+    <string name="app_name">WaveBites Admin</string>
     <string name="WavesOfFood">Waves Of Food</string>
     <string name="adminDash">Admin Dashboard</string>
     <string name="loginTo"> Login To Your\nAdmin Dashboard</string>
@@ -20,4 +20,8 @@
     <string name="create">Create Account</string>
     <string name="chooseLocation">Choose Location</string>
     <string name="location">location</string>
+    <string name="delete">Delete</string>
+    <string name="outForDelivery">Out For Delivery</string>
+    <string name="newUser">New User</string>
+    <string name="createNewUserAdmin">Create New User Admin</string>
 </resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528662419959",
+    "project_id": "food-admin-4e87a",
+    "storage_bucket": "food-admin-4e87a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528662419959:android:5e945c76a2926ee274f6f2",
+        "android_client_info": {
+          "package_name": "com.example.foodadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeISG71a7a8eBYtcBV-fkAQME_Z9GNIXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

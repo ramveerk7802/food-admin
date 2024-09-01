@@ -13,8 +13,26 @@
         android:theme="@style/Theme.FoodAdmin"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.AddItemActivity"
+            android:name=".Activity.PendingOrderActivity"
             android:exported="false" />
+        <activity
+            android:name=".Activity.CreateUserActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.AdminProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.OutForDeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AllItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddItemActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Sign.SignUpActivity"
             android:exported="false"
@@ -22,19 +40,20 @@
         <activity
             android:name=".Sign.SignInActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Activity.WelcomeActivity"
-            android:exported="false"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

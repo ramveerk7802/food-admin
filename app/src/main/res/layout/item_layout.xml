@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/itemImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/salad_banner_a"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:shapeAppearanceOverlay="@style/customShape"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:strokeColor="@color/grey"
+            app:strokeWidth="1dp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_max="110dp"
+            android:hint="Item Name"
+            android:maxLines="2"
+            android:textSize="14sp"
+            app:fontFamily="@font/lato_regular"
+            android:letterSpacing="0.05"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/price"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintStart_toEndOf="@id/itemImage"
+            android:layout_marginStart="10dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:hint="Price"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            app:fontFamily="@font/lato_regular"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintStart_toEndOf="@id/itemImage"
+            app:layout_constraintTop_toBottomOf="@id/itemNameText"
+            app:layout_constraintVertical_bias="0.764" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="12dp"
+            android:weightSum="2"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            app:layout_constraintBottom_toBottomOf="@id/constraint">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/minusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/minus"
+                    android:backgroundTint="@android:color/transparent"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/lato_regular"
+                    android:textColor="@color/black"/>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/plusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/plus"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteButton"
+                android:layout_width="73dp"
+                android:layout_height="22dp"
+                app:icon="@drawable/delete"
+                android:layout_weight="1"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                android:textAllCaps="true"
+                app:iconSize="15dp"
+                android:layout_gravity="center_horizontal"
+                app:backgroundTint="@color/red"
+                android:text="@string/delete"
+                android:textSize="11sp"
+                android:paddingTop="0dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+
+
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

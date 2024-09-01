@@ -5,13 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_app"
-    tools:context=".Sign.SignInActivity">
-    <com.google.android.material.imageview.ShapeableImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/logo"
-        android:alpha="0.07"/>
+    tools:context=".Activity.CreateUserActivity">
+
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -35,7 +30,7 @@
                 app:layout_constraintEnd_toEndOf="@id/constraint"
                 app:layout_constraintStart_toStartOf="@id/constraint"
                 app:layout_constraintTop_toTopOf="@id/constraint"
-                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintVertical_bias="0.08"
                 app:srcCompat="@drawable/logo" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -59,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:letterSpacing="0.06"
-                android:text="@string/loginTo"
+                android:text="@string/createNewUserAdmin"
                 android:textAlignment="center"
                 android:textColor="@color/green2"
                 android:textSize="15sp"
@@ -83,7 +78,20 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="Name"
+                    app:startIconDrawable="@drawable/person">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nameEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/email"
+                    android:layout_marginTop="5dp"
                     app:startIconDrawable="@drawable/email">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -110,97 +118,25 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:letterSpacing="0.05"
-                android:text="@string/or"
-                android:textAlignment="center"
-                android:textColor="@color/green2"
-                app:fontFamily="@font/lato_regular"
-                app:layout_constraintEnd_toEndOf="@id/linear"
-                app:layout_constraintStart_toStartOf="@id/linear"
-                app:layout_constraintTop_toBottomOf="@id/linear" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/text4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:letterSpacing="0.05"
-                android:text="@string/continueW"
-                android:textAlignment="center"
-                android:textColor="@color/green2"
-                android:textSize="18sp"
-                app:fontFamily="@font/yeon_sung_regular"
-                app:layout_constraintEnd_toEndOf="@id/text3"
-                app:layout_constraintStart_toStartOf="@id/text3"
-                app:layout_constraintTop_toBottomOf="@id/text3" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/facebookButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_bg"
-                android:drawableStart="@drawable/facebook"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/lato_regular"
-                android:letterSpacing="0.05"
-                android:paddingStart="10dp"
-                android:paddingEnd="15dp"
-                android:text="@string/facebook"
-                android:textAllCaps="true"
-                app:layout_constraintStart_toStartOf="@id/linear"
-                app:layout_constraintTop_toBottomOf="@id/text4" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/googleButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_bg"
-                android:drawableStart="@drawable/google"
-                android:drawablePadding="10dp"
-                android:elevation="2dp"
-                android:fontFamily="@font/lato_regular"
-                android:letterSpacing="0.05"
-                android:paddingStart="10dp"
-                android:paddingEnd="15dp"
-                android:text="@string/google"
-                android:textAllCaps="true"
-                app:layout_constraintEnd_toEndOf="@id/linear"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toEndOf="@id/facebookButton"
-                app:layout_constraintTop_toBottomOf="@id/text4" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/loginButton"
+                android:id="@+id/createNewUserButton"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/lato_regular"
                 android:letterSpacing="0.05"
-                android:text="@string/login"
+                android:text="@string/newUser"
                 app:backgroundTint="@color/green2"
                 app:layout_constraintEnd_toEndOf="@id/linear"
                 app:layout_constraintStart_toStartOf="@id/linear"
-                app:layout_constraintTop_toBottomOf="@id/googleButton" />
+                app:layout_constraintTop_toBottomOf="@id/linear" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/dontText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:letterSpacing="0.05"
-                android:text="@string/dont"
-                android:textColor="@color/green2"
-                app:fontFamily="@font/lato_regular"
-                app:layout_constraintEnd_toEndOf="@id/loginButton"
-                app:layout_constraintStart_toStartOf="@id/loginButton"
-                app:layout_constraintTop_toBottomOf="@id/loginButton" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

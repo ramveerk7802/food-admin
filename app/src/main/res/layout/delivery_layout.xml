@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Customer Name"
+            android:layout_marginStart="5dp"
+            app:fontFamily="@font/lato_regular"
+            android:letterSpacing="0.05"
+            android:padding="1dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintStart_toStartOf="@id/constraint"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Payment"
+            android:padding="1dp"
+            app:fontFamily="@font/lato_regular"
+            android:letterSpacing="0.05"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/customerName"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/customerName"
+            app:layout_constraintTop_toBottomOf="@id/customerName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/paymentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/customerName"
+            app:layout_constraintEnd_toEndOf="@id/customerName"
+            app:layout_constraintTop_toBottomOf="@id/payment"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintHorizontal_bias="0"
+            android:hint="Payment Status"
+            android:padding="1dp"
+            app:fontFamily="@font/lato_regular"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:letterSpacing="0.05"
+            android:textColor="@color/red"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deliverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            android:text="Deliverd"
+            app:fontFamily="@font/lato_regular"
+            android:letterSpacing="0.05"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintStart_toEndOf="@id/customerName"
+            app:layout_constraintHorizontal_bias="0.9"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewCircle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cardBackgroundColor="@color/red"
+            app:cardCornerRadius="120dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/deliverText"
+
+            app:layout_constraintStart_toStartOf="@id/deliverText"
+            app:layout_constraintTop_toBottomOf="@id/deliverText"
+            app:layout_constraintVertical_bias="1.0"
+            app:strokeWidth="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
