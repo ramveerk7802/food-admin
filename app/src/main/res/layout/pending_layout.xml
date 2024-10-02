@@ -41,17 +41,17 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginTop="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/quantText"
+            app:layout_constraintBottom_toTopOf="@+id/amount"
             app:layout_constraintTop_toTopOf="@id/constraint"
             app:layout_constraintStart_toEndOf="@id/itemImage"
             android:layout_marginStart="10dp"/>
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/quantText"
+            android:id="@+id/amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="Qunatity :"
+            android:text="Amount :"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -62,12 +62,12 @@
             app:layout_constraintTop_toBottomOf="@id/customerName"
             app:layout_constraintVertical_bias="0.764" />
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/quantityText"
+            android:id="@+id/amount1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="@id/quantText"
-            app:layout_constraintBottom_toBottomOf="@id/quantText"
-            app:layout_constraintStart_toEndOf="@id/quantText"
+            app:layout_constraintTop_toTopOf="@id/amount"
+            app:layout_constraintBottom_toBottomOf="@id/amount"
+            app:layout_constraintStart_toEndOf="@id/amount"
             android:layout_marginStart="5dp"
             android:text="20"/>
 
@@ -77,7 +77,6 @@
                 android:id="@+id/orderAcceptButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="true"
                 app:backgroundTint="@color/green2"
                 android:text="Accept"
                 app:layout_constraintTop_toTopOf="@id/constraint"

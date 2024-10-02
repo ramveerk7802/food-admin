@@ -15,23 +15,52 @@
         android:textStyle="bold"
         android:textSize="30sp"
         android:textColor="@color/black"
-        app:fontFamily="@font/yeon_sung_regular"
+        app:fontFamily="@font/lato_regular"
         android:letterSpacing="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="23dp"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:dividerColor="#2d3436"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        app:dividerThickness="5dp"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp"/>
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        android:layout_marginTop="8dp"
+        android:indeterminate="true"
+        app:trackColor="#f1c40f"
+        app:indicatorColor="#e74c3c"
+        app:trackCornerRadius="20dp"
+        app:indicatorTrackGapSize="5dp"
+        app:trackThickness="5dp"
+
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pendingRecycleView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/text"
-        app:layout_constraintEnd_toEndOf="@id/text"
-        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@id/divider"
         tools:listitem="@layout/pending_layout"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

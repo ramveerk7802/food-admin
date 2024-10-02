@@ -96,10 +96,11 @@ class AddItemActivity : AppCompatActivity() {
     }
 
     private fun saveData(foodName: String, price: Int, foodDesc: String, imageUrl: String) {
-        val itemModel = ItemModel(foodName = foodName, foodPrice = price, foodDesc = foodDesc, foodImage = imageUrl)
+
         val menuReference = database.child("AllMenu")
         val key = menuReference.push().key
-        key?.let{
+        val itemModel = ItemModel(foodName = foodName, foodPrice = price, foodDesc = foodDesc, foodImage = imageUrl, foodId = key!!)
+        key.let{
             menuReference.child(key).setValue(itemModel)
                 .addOnSuccessListener {
                     startActivity(Intent(this,MainActivity::class.java))

@@ -99,11 +99,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center"
+                        android:textAlignment="center"
                         android:layout_weight="1"
                         android:textSize="19sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:text="11"/>
+                        android:text="0"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
             <androidx.appcompat.widget.LinearLayoutCompat

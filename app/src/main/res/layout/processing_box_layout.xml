@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:fontFamily="@font/lato_regular"
+        android:letterSpacing="0.05"
+        android:textSize="18sp"
+        android:text="Loading..."/>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="@color/green2"
+        app:indicatorSize="100dp"
+        app:indicatorInset="4dp"
+        app:trackCornerRadius="20dp"
+        app:trackColor="@color/grey"
+        android:layout_below="@id/text"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

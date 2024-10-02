@@ -24,4 +24,7 @@
     <string name="outForDelivery">Out For Delivery</string>
     <string name="newUser">New User</string>
     <string name="createNewUserAdmin">Create New User Admin</string>
+    <string name="orderDetail">Order Details</string>
+    <string name="date">Date : </string>
+    <string name="orderNo"># Order no :</string>
 </resources>
